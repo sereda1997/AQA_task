@@ -1,4 +1,4 @@
-package com.example.AQA_Keepit_task;
+package com.example.AQA_task;
 
 import PageObjects.ConnectorsPage;
 import infrastructure.BaseTest;
@@ -14,10 +14,10 @@ public class MainPageTest extends BaseTest {
     @Test
     @Severity(SeverityLevel.BLOCKER)
     @Description("Verify the ability to add Office365Connector")
-    public void VerifyTheAbilityToCreateOffice365Connector() {
+    public void VerifyTheAbilityToCreateOffice365Connector() throws InterruptedException {
         ConnectorsPage page =
-                openKeepitTestSite()
-                        .logIn("automation@keepitqa.com", "E#*b2wGIbFHz")
+                openTestSite()
+                        .logIn("automation@keepitqa.com", "password")
                         .addConector(Office365Admin)
                         .createNewConector("Test");
     }

@@ -25,7 +25,7 @@ public class ConnectorsPage {
         return this;
     }
 
-    public ConnectorsPage createNewConector(String name) {
+    public ConnectorsPage createNewConector(String name) throws InterruptedException {
         modalDialogComponent.inputConnectorName(name);
         modalDialogComponent.verifyNextButtonState();
         return this;

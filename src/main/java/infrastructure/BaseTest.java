@@ -16,7 +16,7 @@ public class BaseTest {
         Configuration.browser = ChromeDriverProvider.class.getName();
     }
 
-    protected LoginPage openKeepitTestSite() {
+    protected LoginPage openTestSite() {
         Report.log("Open Login Page");
         open(keepit_test_site_url);
         return new LoginPage();

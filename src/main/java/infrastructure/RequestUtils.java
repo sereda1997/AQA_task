@@ -17,7 +17,7 @@ public class RequestUtils {
 
     static RequestSpecification requestSpec = new RequestSpecBuilder()
             .setAccept(ContentType.XML)
-            .setAuth(RestAssured.basic("automation@keepitqa.com", "E#*b2wGIbFHz"))
+            .setAuth(RestAssured.basic("automation@keepitqa.com", "password"))
             .build();
 
 

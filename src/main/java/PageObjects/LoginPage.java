@@ -14,10 +14,12 @@ public class LoginPage extends BaseTest {
             submitButton = $(By.id("login-form-login-button"));
 
 
-    public ConnectorsPage logIn(String email, String password) {
+    public ConnectorsPage logIn(String email, String password) throws InterruptedException {
         Report.log("Login as user :" + email);
         emailInput.setValue(email);
+        Thread.sleep(5000L);// Only for presentation
         passwordInput.setValue(password);
+        Thread.sleep(5000L);// Only for presentation
         submitButton.click();
         return new ConnectorsPage();
     }
