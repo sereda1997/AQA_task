@@ -6,7 +6,6 @@ import infrastructure.utils.Report;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$x;
 
 public class LoginPage extends BaseTest {
 
@@ -15,15 +14,13 @@ public class LoginPage extends BaseTest {
             submitButton = $(By.id("login-form-login-button"));
 
 
-
-    public ConnectorsPage logIn(String email, String password){
-        Report.log("Login as user :"+email);
+    public ConnectorsPage logIn(String email, String password) {
+        Report.log("Login as user :" + email);
         emailInput.setValue(email);
         passwordInput.setValue(password);
         submitButton.click();
         return new ConnectorsPage();
     }
-
 
 
 }

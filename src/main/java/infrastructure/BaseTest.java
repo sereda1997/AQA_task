@@ -8,15 +8,15 @@ import org.testng.annotations.BeforeClass;
 import static com.codeborne.selenide.Selenide.open;
 
 public class BaseTest {
-    public static  String keepit_test_site_url ="https://ws-test.keepit.com";
+    public static String keepit_test_site_url = "https://ws-test.keepit.com";
 
     @BeforeClass
-    protected void createWebDriver(){
+    protected void createWebDriver() {
         Configuration.startMaximized = true;
-        Configuration.browser=ChromeDriverProvider.class.getName();
+        Configuration.browser = ChromeDriverProvider.class.getName();
     }
 
-    protected LoginPage openKeepitTestSite(){
+    protected LoginPage openKeepitTestSite() {
         Report.log("Open Login Page");
         open(keepit_test_site_url);
         return new LoginPage();

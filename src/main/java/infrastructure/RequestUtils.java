@@ -37,9 +37,9 @@ public class RequestUtils {
                 .get("https://ws-test.keepit.com/users/" + guid)
                 .then().log().ifError()
                 .assertThat()
-        .and().body("user.created", equalTo("2019-02-28T13:07:49Z"))
-        .and().body("user.product", equalTo("7dwqnq-5cvrcm-1z3ehj"))
-        .and().body("user.parent", equalTo("80ltks-yhfls5-24zyf2"))
-        .and().body("user.enabled", equalTo("true"));
+                .and().body("user.created", equalTo("2019-02-28T13:07:49Z"))
+                .and().body("user.product", equalTo("7dwqnq-5cvrcm-1z3ehj"))
+                .and().body("user.parent", equalTo("80ltks-yhfls5-24zyf2"))
+                .and().body("user.enabled", equalTo("true"));
     }
 }

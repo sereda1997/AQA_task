@@ -6,11 +6,8 @@ import infrastructure.RequestUtils;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
-import org.testng.annotations.*;
+import org.testng.annotations.Test;
 
-import static com.codeborne.selenide.Condition.attribute;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
 import static infrastructure.CloudConectors.Office365Admin;
 
 public class MainPageTest extends BaseTest {
